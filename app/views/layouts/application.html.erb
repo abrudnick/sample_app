@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>"Adam Brudnick's Thoughts| "<%= yield(:title) %></title>
+    <title>Adam's Love for Lindsay | '<%= yield(:title)%></title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -8,23 +9,10 @@
     <%= render 'layouts/shim' %>
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <%= link_to "Lindsay App", '#', id: "logo" %>
-          <nav>
-            <ul class="nav pull-right">
-              <li><%= link_to "Home",    '#' %></li>
-              <li><%= link_to "Help",    '#' %></li>
-              <li><%= link_to "Sign in", '#' %></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <%= render 'layouts/header' %>
     <div class="container">
-    <!-- <body bgcolor="E6E6FA">-->
       <%= yield %>
     </div>
+    <%= rendeer 'layouts/footer'>
   </body>
 </html>
