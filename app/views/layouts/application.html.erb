@@ -1,7 +1,6 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title><%= full_title(yield(:title)) %></title>
+    <title><Ruby on Rails Tutorial Sample App | %= yield(:title) %></title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -26,6 +25,7 @@
       </div>
     </header>
     <div class="container">
+    <!-- <body bgcolor="E6E6FA">-->
       <%= yield %>
     </div>
   </body>
